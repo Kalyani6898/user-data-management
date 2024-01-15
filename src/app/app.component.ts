@@ -9,20 +9,20 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatTableModule } from '@angular/material/table';
-import { UserDataService } from './service/user-data.service';
-import { User, UserData } from './module/user.module';
-import { Store } from '@ngrx/store';
-import { getUserDataAction, updateUserData } from './store/data.actions';
-import { selectUser } from './store/data.selectors';
 import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { Store } from '@ngrx/store';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
+import { UserDataService } from './service/user-data.service';
+import { User, UserData } from './module/user.module';
+import { getUserDataAction, updateUserData } from './store/data.actions';
+import { selectUser } from './store/data.selectors';
 
 @Component({
   selector: 'app-root',

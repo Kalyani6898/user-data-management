@@ -18,7 +18,7 @@ export class UserDataService {
   getUserData(): Observable<UserData> {
     return this.http.get<UserData>(`${this.apiUrl}`).pipe(
       tap((data) => {
-        console.log('API Called:-', data);
+        console.log('Dummy data API called:-', data);
         return data;
       })
     );
